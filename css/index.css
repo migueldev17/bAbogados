@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+header {
+    background-color: #005f60;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #b22222; /* Matte red */
+    color: white;
+    border-radius: 5px;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #e0f7f9;
+}
+
+.hero h1 {
+    color: #b22222; /* Matte red */
+    font-size: 3em;
+    text-shadow: 2px 2px blue;
+}
+
+.content {
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2);
+    background: white;
+    margin-bottom: 20px;
+}
+
+#equipo img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-button {
+    font-size: 2em;
+    color: #005f60;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-button:hover {
+    color: #b22222; /* Matte red */
+}
+
+.map-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    margin-top: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #005f60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #b22222; /* Matte red */
+}
+
+@media (min-width: 768px) {
+    .content {
+        max-width: 800px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .content {
+        padding: 30px 15px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-theme header {
+    background-color: #333;
+}
+
+.dark-theme .content {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-theme .hero {
+    background: #2c2c2c;
+}
+
+.dark-theme nav ul li a {
+    color: white;
+}
+
+.dark-theme nav ul li a:hover {
+    background-color: #b22222; /* Matte red */
+    color: white;
+}
+
+.dark-theme #theme-toggle {
+    color: yellow;
+}
+
+.dark-theme .social-button {
+    color: white;
+}
+
+.dark-theme .social-button:hover {
+    color: #b22222; /* Matte red */
+}
