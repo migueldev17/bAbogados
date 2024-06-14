@@ -70,7 +70,7 @@ nav ul li a:hover {
 .hero h1 {
     color: #b22222; /* Matte red */
     font-size: 3em;
-    text-shadow: 2px 2px blue;
+    text-shadow: 2px 0.5px blue;
 }
 
 .content {
